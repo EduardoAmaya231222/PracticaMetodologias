@@ -1,0 +1,14 @@
+.navbar-nav .nav-link {
+    color: white !important;
+  }
+body {
+    background-color: #4B527E !important;
+  }
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
