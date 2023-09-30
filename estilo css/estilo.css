@@ -1,0 +1,43 @@
+*{
+    padding: 5px;
+    margin: 5 px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+img {
+    width: 250px;
+    height: 250px;
+   text-align: center;
+}
+contenido {
+    display: flex;
+    margin: 60px;
+}
+articulos {
+    width: 80px;
+    border-right: 3px solid black;
+}
+h2 {
+    text-align: center;
+    background-color: rgb(150, 127, 85);
+    color: white;
+    padding: 10px;
+}
+ p {
+text-align: center;
+
+ }
+
+ body {
+    margin: 0;
+    padding: 0;
+    background:url(fondo.jpg);
+    background-size: cover;
+    background-position:center ;
+    font-family: sans-serif;
+ }
