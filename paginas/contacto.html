@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practica AMACCS</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.1.5/sweetalert2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">AMACS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    </div>
+    <!-- Formulario de contacto -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-lg-6 col-md-6 col-sm-12">
+          <img src="../img/contact.jpg" class="img-fluid" alt="Imagen de una persona del centro de contacto">
+        </div>
+        <div class="col col-lg-6 col-md-6 col-sm-12" id="form-container">
+          <h1 class="h1">Contáctanos</h1>
+          <form action="post" id="formulario">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y apellido" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
+              </div>
+              <div class="mb-3 col-lg-12">
+                <label for="exampleFormControlTextarea1" class="form-label">Teléfono</label>
+                <input type="phone" class="form-control" id="exampleFormControlTextarea1" placeholder="7123-4567" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">¿Cómo podemos ayudarte?</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí..."></textarea>
+              </div>
+              <input type="submit" value="Enviar" class="btn btn-primary">
+            </form>
+            </div>
+      </div>
+    </div>
+    <div></div>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Información de Contacto</h4>
+              <p>Dirección: Carretera</p>
+              <p>Número de Teléfono: 2222-2222</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <a href="contacto.html" class="btn btn-primary">Contacto</a>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12 text-center">
+              <p>&copy; Derechos Reservados por Grupo de Proyecto</p>
+            </div>
+          </div>
+        </div>
+      </footer>         
+      <script src="jquery-3.7.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+      <script>
+          document.getElementById("formulario").addEventListener("submit", function(event) {
+          event.preventDefault();
+          enviarFormulario();
+      });
+  
+      function enviarFormulario(){
+          setTimeout(function(){
+              swal("Formulario enviado", "¡Nos pondremos en contacto contigo!", "success");
+  
+              document.getElementById("formulario").reset();
+          }, 1000);
+      }
+      </script>
+  </body>
+</html>
